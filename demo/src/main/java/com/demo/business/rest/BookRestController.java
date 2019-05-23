@@ -1,11 +1,10 @@
-package com.demo.business;
+package com.demo.business.rest;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -17,7 +16,7 @@ import com.demo.model.Book;
 import com.demo.persistence.BookRepository;
 
 @RestController
-public class BookController {
+public class BookRestController {
 
     @Autowired
     private BookRepository repository;
